@@ -1,6 +1,7 @@
 #Chinese Zodiac Sign Calculator
 print("Welcome to Chinese Zodiac Sign Calculator!")
 zodiac_sign = ["Monkey", "Chicken", "Dog", "Pig", "Rat","Cow", "Tiger", "Rabbit", "Dragon", "Snake", "Horse", "Goat"]
+#Create a function with try and except to prevent it blow up
 def calculator():
 	while True:
 		year = input("Please enter your year of birth.\n")
@@ -13,7 +14,7 @@ def calculator():
 		print("Your chinese zodiac is " + zodiac_sign[zodiac_number] +  ".")
 		break
 calculator()
-#Continue or Stop
+#Continue or Stop_to control the first loop and it is also continuous loop, so the program will keep running until N.
 while True:
 	ans = input("Do you want to continue? Y or N?")
 	ans = ans.lower()
